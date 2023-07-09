@@ -1,0 +1,39 @@
+.container3 {
+  margin-top: 140px;
+  margin-left: 165px;
+  
+  width: 1170px;
+  height: 300px;
+}
+
+.containers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+text-align: center;
+}
+
+.container-3 {
+  position: relative;
+  display: inline-block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 370px;
+  height: 19%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+ flex-direction: column;
+ justify-content: flex-end;
+}
+
+.text-overlay .txt {
+  color: $color-primary;
+  font-size: 24px;
+}

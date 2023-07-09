@@ -1,0 +1,15 @@
+.svg {
+  &__img {
+    margin-right: 5px;
+    margin-top: -2px;
+    fill: $color-gray;
+  }
+  
+  &__team {
+    fill: $color-svg-gray;
+  }
+
+  &__client {
+    fill: $color-svg-gray;
+  }
+}

@@ -1,0 +1,155 @@
+.links1 {
+  margin-left: 2rem;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  
+}
+
+.link {
+  position: relative;
+	color: #000000;
+	cursor: pointer;
+	line-height: 3;
+	text-decoration: none;
+}
+
+.link:hover {
+  color: #2196f3;
+}
+
+.link::after {
+  display: block;
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background-color: #2196f3;
+	content: "";
+	transition: width 0.3s ease-out;
+}
+
+.link:hover:after,
+.link:focus:after {
+	width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 70%;
+  margin: 0 auto;
+  padding: 2rem;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    &-blue {
+      color: $color-blue;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-item {
+      font-size: $font-14;
+      font-weight: $font-w-500;
+      letter-spacing: 0.28px;
+
+      color: $color-dark-gray;
+      text-decoration: none;
+      margin-left: $m-1;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: $color-black;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $color-gray;
+    margin-left: $m-25;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: relative;
+    line-height: 2;
+
+    font-size: $font-14;
+    font-weight: $font-w-500;
+    letter-spacing: 0.28px;
+
+    text-decoration: none;
+    margin-left: $m-2;
+    transition: all 0.3s ease-in-out;
+
+    &:after {
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 0;
+      height: 4px;
+      background-color: $color-blue;
+      content: "";
+      transition: all 0.3s ease-in-out;
+      border-radius: 2px;
+      top: 52px;
+    }
+
+    &:hover:after,
+    &:focus:after {
+      width: 100%;
+    }
+
+    &--black {
+      color: $color-black;
+    }
+
+    &--gray {
+      color: $color-gray;
+    }
+
+    &--logo {
+      font-size: $font-26;
+      font-weight: $font-w-700;
+      font-family: $font-family-ralewey;
+  
+      color: $color-black;
+      letter-spacing: 0.78px;
+      text-decoration: none;
+    }
+
+    &:hover:not(#logo) {
+      color: $color-blue;
+
+      .svg__img {
+        transition: all 0.3s ease-in-out;
+        fill: $color-blue;
+      }
+    }
+  }
+}

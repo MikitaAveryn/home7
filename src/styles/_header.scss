@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  background: $color-primary;
+  width: 1500px;
+  height: 80px;
+  position: relative;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.web-studio,
+.web-studio * {
+  box-sizing: border-box;
+}
+.web-studio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: 700 26px "Raleway", sans-serif;
+  position: relative;
+}
+.web-studio1 {
+  color: $color-blue;
+  font-style: 700 26px "Raleway", sans-serif;
+  font-size: 2.5rem;
+}
+.web-studio2 {
+  color: #000000;
+  font-style: 700 26px "Raleway", sans-serif;
+  font-size: 2.5rem;
+}
+
+.contacts {
+  display: flex;
+ 
+  align-items: center;
+}
+
+.email:hover .email1 {
+  color: $color-blue;
+}
+
+.email:hover path {
+  fill: $color-blue;
+}
+
+.email1 {
+  text-decoration: none;
+  color: #000000;
+  margin-left: 0.5rem;
+} 
+
+.email {
+  display: flex;
+  flex-direction: row;  
+}
+
+
+.phone {
+
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.phone1 {
+  text-decoration: none;
+  margin-left: 0.5rem;
+
+  color: #000000;
+}
+
+.phone:hover .phone1 {
+  color: $color-blue;
+}
+
+.phone:hover path {
+  fill: $color-blue;
+}
